@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM | Landing Page</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <section class="mainsec">
+        <header>
+        <a href="#" class="logo">Fitness</a>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Discount</a></li>
+            <li><a>Trainers</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+        </header>
+        <div class="maincontent">
+            <div class="disc">
+                <h2>Build Perfect body <br>with clean mind</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, veritatis deserunt? Illo laudantium omnis doloremque totam atque nisi vel quibusdam doloribus iste cupiditate saepe vero distinctio accusamus ullam dolor, asperiores fuga assumenda optio ipsa tempore id nihil in? Quidem, reprehenderit!</p>
+                <a href="#">Join us now</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href=""><img src="images/facebook.png"></a></li>
+            <li><a href=""><img src="images/twitter.png"></a></li>
+            <li><a href=""><img src="images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script>
+        function toggleMenu()
+        {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
